@@ -19,6 +19,7 @@ using namespace std;
 int main(int argc, char** argv) 
     {
     int number_of_pods, peas_per_pod, total_peas;
+    cout << "Hello\n";
     cout << "Press return after entering a number.\n";
     cout << "Enter the number of pods:\n";
     
@@ -36,6 +37,7 @@ int main(int argc, char** argv)
     cout << "you have ";
     cout << total_peas;
     cout << " peas in all the pods.\n";
+    cout << "Good-bye\n";
 
     return 0;
 }

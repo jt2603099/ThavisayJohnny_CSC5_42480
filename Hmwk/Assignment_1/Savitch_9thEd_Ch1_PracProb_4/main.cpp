@@ -26,7 +26,7 @@ int main(int argc, char** argv)
     
     cout << "Enter the number of peas in a pod:\n";
     cin >> peas_per_pod;
-    total_peas = number_of_pods * peas_per_pod;
+    total_peas = number_of_pods + peas_per_pod;
     cout << "If you have ";
     cout << number_of_pods;
     cout << " pea pods\n";
