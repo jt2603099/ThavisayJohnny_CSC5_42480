@@ -41,14 +41,17 @@ int main(int argc, char** argv) {
     bsPrice=(gsPrice-fedTax-stTax)/(1+stsTax);//Base price for a gallon of gas
     totTax=gsPrice-bsPrice;//Total tax paid /gallon of gas
     percTax=(totTax/bsPrice)*100;//Percentage of taxes paid
-    profRange*=100;
+    profRange*=100*bsPrice;
     
     
     //Display Outputs
-    cout<<"Total taxes = $"<< totTax <<"/gallon"<<endl;
     cout<<"Gas price = $"<< gsPrice <<"/gallon"<<endl;
+    cout<<"Base price = $"<< bsPrice <<"/gallon"<<endl;
+    cout<<"Total taxes = $"<< totTax <<"/gallon"<<endl;
+    cout<<"Federal tax = $"<< fedTax <<"/gallon"<<endl;
+    cout<<"State Sales tax = $"<<stsTax*100 <<"%"<<endl;
     cout<<"Percentage price due to tax gas = %"<< percTax <<endl;
-    cout<<"Oil company profit range = %"<< profRange <<endl;
+    cout<<"Oil company profit range = "<< profRange <<"%"<<endl;
 
     return 0;
 }
