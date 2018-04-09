@@ -16,7 +16,7 @@
 #include <math.h> 
 
 //Function declaration of interest
- float interest(float rate, float initial, int months);
+float interest(float rate, float initial, int months);
 //Computes interest on a credit card account. 1st parameter = interest rate.
 //Initial = Initial account balance, last parameter the number of months
 

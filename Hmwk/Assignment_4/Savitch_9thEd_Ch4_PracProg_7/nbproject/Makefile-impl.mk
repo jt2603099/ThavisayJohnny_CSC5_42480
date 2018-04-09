@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=Lab Assignment 7 Menu
+PROJECTNAME=Savitch_9thEd_Ch4_PracProg_7
 
 # Active Configuration
 DEFAULTCONF=Debug
