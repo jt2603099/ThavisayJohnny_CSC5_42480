@@ -1,0 +1,54 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/* 
+ * File:   main.cpp
+ * Author: jt2603099
+ * Simulate a blackjack game between a player and a computer
+ * Created on April 15, 2018, 7:41 PM
+ */
+
+#include <iostream> //Input Output Library
+#include <cstdlib> //Srand/Rand
+#include <fstream> //File I/O
+#include <iomanip> //Formatting Library
+#include <ctime> //Time Library
+#include <string> //Strings
+
+using namespace std;
+
+//User Libraries
+
+//Global Constants
+
+
+int main(int argc, char** argv) {
+	//Set Input and Output files
+	
+	//Declare variables
+	//No doubles, floats okay
+	
+	//Ask to play a game or not
+		
+		//Begin the game with a variable set to loop
+			//Give two random cards to the player
+			//Values 1 to 11
+			//Sum both cards
+			//If value = 21(Player wins!)
+			//If != 21, hit for more cards or stay
+				//Hit, so add more cards to try to hit 21
+					//If > 21 OR Stay, play dealer's card to determine who wins
+						//If Dealer > 21 && User Stays, User Wins
+						//If Dealer < 21 && Dealer > User, Dealer Wins
+						//If Dealer = User, Tie
+						
+	//Output most recent game information to file
+	
+	//Close files and Exit stage
+    return 0;
+	
+}
+
