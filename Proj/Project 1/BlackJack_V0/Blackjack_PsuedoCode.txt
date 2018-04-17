@@ -24,6 +24,7 @@ using namespace std;
 
 //Global Constants
 
+//Function Hit
 
 int main(int argc, char** argv) {
 	//Set Input and Output files
@@ -33,9 +34,10 @@ int main(int argc, char** argv) {
 	
 	//Ask to play a game or not
 		
-		//Begin the game with a variable set to loop
+		//Begin the game with a variable set for a do-while loop
 			//Give two random cards to the player
-			//Values 1 to 11
+				//Values 1 to 11
+				//Values 1 to 11
 			//Sum both cards
 			//If value = 21(Player wins!)
 			//If != 21, hit for more cards or stay
@@ -52,3 +54,4 @@ int main(int argc, char** argv) {
 	
 }
 
+//Function Definition for Hit
