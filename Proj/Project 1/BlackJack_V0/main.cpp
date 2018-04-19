@@ -23,16 +23,18 @@ using namespace std;
 //Global Constants
 
 //Function Declarations
-int Hit();
+void winner(int, int); //Compares player and computer's cards to determine winner
+int Hit(int); //Hits player cards if they decide
+int random(int lower, int upper); //Generates random number when given lower and upper numbers
 
 int main(int argc, char** argv) {
     //Declare variables
     //No doubles, floats okay
     string inFile = "GameData.txt"; //String name for input file
     string outFile = "GameStats.txt"; //String name for output file
-    int player(0), //set player and computer(dealer) to have 0 cards
-        dealer(0),
-        hand(0); //Set starting hand to 0 
+    int player(0),
+        cpu(0),
+        hand(0);
     char play('Y'); //Loop to play the game
     bool stay(true); //Bool to hit cards or stay
     
@@ -46,13 +48,10 @@ int main(int argc, char** argv) {
     cin >> play;
     //Begin the game with a variable set for a do-while loop
     do {
-        int i;
-        int (i=0, i=2, i++){
-            hand = i 
-        }
-        
+        hand += random(0,11);
+        break;
         cout << "Your total value is " << hand <<endl;
-        cout <<
+        out << hand;
     } while (play == 'Y' || play == 'y');
 		
 			//Give two random cards to the player
@@ -77,8 +76,8 @@ int main(int argc, char** argv) {
     return 0;
 }
 
-//Function Definition for Hit
-int Hit() {
-    Hit = 1 + (rand() % 11); 
-    return Hit;
+int random(int lower, int upper){
+    return 1 + (rand() & (upper - lower)); 
+    //I use 11 as upper and 0 as lower so the remaining values would be 0-10
+    //but we add + to shift the remaining values from 1-11
 }
