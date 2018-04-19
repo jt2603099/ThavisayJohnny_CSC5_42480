@@ -1,0 +1,3 @@
+Player starting hand was: 7
+Computer's starting hand was: 14
+Testing if this works

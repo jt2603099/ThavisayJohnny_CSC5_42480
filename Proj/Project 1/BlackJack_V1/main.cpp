@@ -39,9 +39,7 @@ int main(int argc, char** argv) {
             hand(0),
             n(0);
         char play('Y'); //Loop to play the game
-        char more('Y'); //Decide to hit or stay
-        char hit; //Once in hit loop, keep hitting?
-        bool stay; //Bool to hit cards or stay
+        bool stay(true); //Bool to hit cards or stay
     
     //Initiate the File I/O
     ifstream in(inFile); //Opens input file given by inFile since the name was given in its parameter
@@ -60,32 +58,17 @@ int main(int argc, char** argv) {
             player += random(0,11); //Values 1 to 11
             cpu += random(0,11); //Values 1 to 11
         }
-        
             cout << "Your starting hand is " << player <<endl; 
             cout << "Computer's starting hand is " << cpu <<endl;
             out << "Player starting hand was: " <<  player <<endl;
             out << "Computer's starting hand was: " << cpu <<endl;
-            
-            cout << "[H]it or [S]tay?" <<endl; //Hit or Stay
-            cin >> more;
-                if (more == 'H' || more == 'h') 
-                    stay = false;
-                else if (more == 'S' || more == 's')
-                    stay = true;
-            
-                if (stay != true) {
-                    if (hit == 'Y' || hit == 'y') {
-                    player += random(0,11);
-                    cout << "Your total hand is " << player <<endl;
-                }
-            }
-            
-        //Call Function Winner to determine the winner        
-        winner(player, cpu); //Outputs the winner
         
-        cout << "Play another game?" <<endl;
-        cout << "(Y)es or (N)o: " <<endl;
-        cin >> play;
+        winner(player, cpu);
+        cout << winner <<endl;
+        
+    cout << "Play another game?" <<endl;
+    cout << "(Y)es or (N)o: " <<endl;
+    cin >> play;
     } while (play == 'Y' || play == 'y');
 				
 				
@@ -93,7 +76,11 @@ int main(int argc, char** argv) {
 			
 			//If != 21, hit for more cards or stay
 				//Hit, so add more cards to try to hit 21
-					//If > 21 OR Stay, play dealer's card to determine who wins					
+					//If > 21 OR Stay, play dealer's card to determine who wins
+						//If Dealer > 21 && User Stays, User Wins
+						//If Dealer < 21 && Dealer > User, Dealer Wins
+						//If Dealer = User, Tie
+						
 	//Output most recent game information to file
 	
 	//Close files and Exit stage
