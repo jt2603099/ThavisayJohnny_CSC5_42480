@@ -1,3 +1,9 @@
 Player starting hand was: 9
-Computer's starting hand was: 11
-Your hand is: 20
+Computer's starting hand was: 10
+Your hand is: 14
+Your hand is: 19
+Computer has 13
+You have 19
+You got 19
+Computer got 13
+Testing if this works
