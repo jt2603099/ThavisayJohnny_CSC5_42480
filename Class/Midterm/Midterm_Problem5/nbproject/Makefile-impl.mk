@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=BlackJack_V0
+PROJECTNAME=Midterm_Problem5
 
 # Active Configuration
 DEFAULTCONF=Debug
