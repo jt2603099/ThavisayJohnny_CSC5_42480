@@ -19,14 +19,14 @@ using namespace std;
 void input(double& input1, double& input2);
 //Retrieves two inputs for feet and inches
 
-int convert(double& meters, double& cntmtrs, double& ft, double& in);
-//Converts feet and inches to meters and centimeters
+void convert(double& meters, double& cntmtrs, double& feet, double& inches);
+//Converts meters and centimeters to feet and inches
 //First parameter is feet, second is inches
 //Returns meters and centimeters
 
 void output(double meters, double cntmtrs, double feet, double inches);
 //Outputs the conversion
-//First parameter is meters, second is centimeters
+//First parameter is meters, second is centimeters, third feet, fourth inches
 
 int main(int argc, char** argv) {
 //Declare variables
@@ -52,7 +52,7 @@ void input(double& input1, double& input2 ) {
     cin >> input1 >> input2;
 }
 
-int convert(double& meters, double& cntmtrs, double& feet, double& inches) {
+void convert(double& meters, double& cntmtrs, double& feet, double& inches) {
     float ft(3.2808), in(12.0), newft, newin;
     //Find in feet
     newft = meters * ft; //Multiply meters by ft to convert to feet
