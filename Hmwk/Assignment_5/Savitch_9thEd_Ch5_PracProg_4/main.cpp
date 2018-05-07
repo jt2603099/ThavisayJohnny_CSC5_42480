@@ -107,7 +107,7 @@ void convMC(float& meters, float& cntmtrs, float& feet, float& inches) {
     inches = newft + newin;
 }
 
-void output(int choice, float input1, float input2, float output1, float output2) {
+void output(int choice, float input1, float input2, int output1, float output2) {
     
     cout.setf(ios::showpoint);
     cout.setf(ios::fixed);

@@ -61,7 +61,7 @@ void input(int choice, int& input1, int& input2) {
     cout << "Type 1 to convert pounds & ounces to kilograms and grams" <<endl;
     cout << "or 2 for kilograms & grams to pounds & ounces." <<endl;
     
-    cin >> choice; //
+    cin >> choice; 
     
     
     if (choice == 1) {
