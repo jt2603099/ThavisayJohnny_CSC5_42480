@@ -75,7 +75,7 @@ void output(int input1, int input2, int conv1, float conv2) {
     
     cout.setf(ios::fixed);
     cout.setf(ios::showpoint);
-    cout.precision(2);
+    cout.precision(4);
     
     cout << input1 << " kilograms and " << input2 << " grams = " << conv1 << " pounds and " << conv2 << " ounces." <<endl;
 }

@@ -61,7 +61,7 @@ void input(int& input1, int& input2) {
 
 void convert(int& input1, int& input2, float& conv1, float& conv2) {
     //Declare variables
-    float kg(2.2046), g(1000.0), oz(16.0), lb2; //kground is nearest integer rounded down
+    float kg(2.2046), g(1000.0), oz(16.0), lb2;
     //Convert to kg
     lb2 = input2 / oz;//Convert ounces to pounds
     conv1 = ((input1 + lb2) / kg); //Add pounds and oz(lbs equiv) together then converts to kilograms
